@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | HackerRank</title>
+    <link rel="icon" href="Icon.ico">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <style>
+        .cont1 {
+            background: #39424e;
+            margin-top: -16px;
+            margin-left: -8px;
+            margin-right: -8px;
+            height: 65px;
+        }
+
+        h1 {
+            font-family: 'Open Sans', sans-serif;
+            display: inline-block;
+            font-size: 26px;
+            position: absolute;
+            top: 82px;
+            left: 120px;
+        }
+
+        #h4f {
+            color: #c7d1d3;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            display: inline-block;
+            position: absolute;
+            top: 57px;
+            left: 121px;
+        }
+
+        #h3f {
+            display: inline-block;
+            position: absolute;
+            top: 190px;
+            left: 120px;
+        }
+
+        .cont1 li {
+            float: left;
+            list-style: none;
+            padding: 17px 12px;
+            color: #cbced1;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 100%;
+            font-weight: bold;
+        }
+
+        .cont2 #a {
+            position: absolute;
+            top: 1px;
+            left: 330px;
+        }
+
+        #b {
+            position: absolute;
+            top: 1px;
+            left: 415px;
+        }
+
+        #c {
+            position: absolute;
+            top: 1px;
+            left: 500px;
+        }
+
+        .cont2 {
+            display: inline-block;
+            /* margin-left: 280px; */
+            /* border: 3px solid black; */
+        }
+
+        #image {
+            display: inline-block;
+            position: absolute;
+            top: 2px;
+            left: 118px;
+            width: 200px;
+        }
+        #image2 {
+            display: inline-block;
+            position: absolute;
+            top: -25px;
+            left: 460px;
+            width: 171px;
+            z-index: +1;
+            
+        }
+        #image3 {
+            display: inline-block;
+            position: absolute;
+            top: -25px;
+            left: 472px;
+            width: 171px;
+            z-index: +1;
+            
+        }
+        #image4 {
+            display: inline-block;
+            position: absolute;
+            top: -25px;
+            left: 466px;
+            width: 171px;
+            z-index: +1;
+            
+        }
+
+        .cont2 a {
+            text-decoration: none;
+            color: #cbced1;
+        }
+
+        .cont2 a:hover {
+            color: white;
+        }
+
+        .cont3 {
+            float: left;
+            background: white;
+            margin-left: -8px;
+            margin-right: -8px;
+            height: 104px;
+            width: 1440px;
+
+        }
+
+        .cont4 {
+            background: #f3f7f7;
+            float: left;
+            margin-left: -8px;
+            margin-right: -8px;
+            height: 1000px;
+            width: 1440px;
+
+        }
+
+        .subcont2 a {
+            color: #077bbf;
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+            font-size: 14px;
+            position: absolute;
+            top: 120px;
+            right: 110px;
+        }
+
+        .subcont2 a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            background-color: #1ba94c;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            border: none;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            /* margin-top: 19px; */
+            position: absolute;
+            top: 168px;
+            left: 31px;
+            border-radius: 2px;
+            box-shadow: 1px 1px 4px #19a94c;
+
+        }
+        .btn2 {
+            background-color: white;
+            color: #1ba94c;
+            cursor: pointer;
+            padding: 18px;
+            border: 1px solid #1ba94c;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            /* margin-top: 19px; */
+            position: absolute;
+            top: 168px;
+            left: 31px;
+            border-radius: 2px;
+        }
+        .btn3 {
+            background-color: white;
+            color: #1ba94c;
+            cursor: pointer;
+            padding: 18px;
+            border: 1px solid #1ba94c;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            /* margin-top: 19px; */
+            position: absolute;
+            top: 168px;
+            left: 31px;
+            border-radius: 2px;
+        }
+
+        .sub2 {
+            box-sizing: border-box;
+            background-color: white;
+            cursor: pointer;
+            padding-left: 30px;
+            display: inline-block;
+            /* border: 3px solid black; */
+            width: 583px;
+            height: 263px;
+            position: absolute;
+            top: 250px;
+            left: 120px;
+            box-shadow: -7px 0px 13px #babebe,7px 7px 13px #babebe;
+
+        }
+        .sub2:hover{
+            box-shadow: -5px 0px 7px #cfd2d2,5px 5px 7px #cfd2d2;
+        }
+        .sub3 {
+            box-sizing: border-box;
+            background-color: white;
+            cursor: pointer;
+            padding-left: 30px;
+            display: inline-block;
+            /* border: 3px solid black; */
+            width: 583px;
+            height: 263px;
+            position: absolute;
+            top: 250px;
+            left: 749px;
+            box-shadow: -7px 0px 13px #d8dcdc,7px 7px 13px #d8dcdc;
+
+        }
+        .sub3:hover{
+            box-shadow: -5px 0px 7px #dee1e1,5px 5px 7px #dee1e1;
+        }
+        .sub4 {
+            box-sizing: border-box;
+            background-color: white;
+            cursor: pointer;
+            padding-left: 30px;
+            display: inline-block;
+            /* border: 3px solid black; */
+            width: 583px;
+            height: 263px;
+            position: absolute;
+            top: 548px;
+            left: 120px;
+            box-shadow: -7px 0px 13px #d8dcdc,7px 7px 13px #d8dcdc;
+
+        }
+        .sub4:hover{
+            box-shadow: -5px 0px 7px #dee1e1,5px 5px 7px #dee1e1;
+
+        }
+        
+        .grey {
+            color: #c7d1d3;
+            /* margin-top: 17px; */
+            position: absolute;
+            top: 11px;
+            left: 31px;
+            font-size: 13px;
+            font-family: 'Open Sans';
+            font-weight: bold;
+        }
+        .grey2 {
+            color: #c7d1d3;
+            /* margin-top: 17px; */
+            position: absolute;
+            top: 11px;
+            left: 31px;
+            font-size: 13px;
+            font-family: 'Open Sans';
+            font-weight: bold;
+        }
+        .grey3 {
+            color: #c7d1d3;
+            /* margin-top: 17px; */
+            position: absolute;
+            top: 11px;
+            left: 31px;
+            font-size: 13px;
+            font-family: 'Open Sans';
+            font-weight: bold;
+        }
+
+        .content {
+            color: #39424e;
+            font-size: 28px;
+            /* margin-top: 0px; */
+            position: absolute;
+            top: 29px;
+            left: 31px;
+            font-family: 'Open Sans', sans-serif;
+            /* font-weight: 950; */
+        }
+        .content2 {
+            color: #39424e;
+            font-size: 28px;
+            /* margin-top: 0px; */
+            position: absolute;
+            top: 29px;
+            left: 31px;
+            font-family: 'Open Sans', sans-serif;
+            /* font-weight: 950; */
+        }
+        .content3 {
+            color: #39424e;
+            font-size: 28px;
+            /* margin-top: 0px; */
+            position: absolute;
+            top: 29px;
+            left: 31px;
+            font-family: 'Open Sans', sans-serif;
+            /* font-weight: 950; */
+        }
+        .bar {
+            display: inline-block;
+            border: 3px solid black;
+            /* margin-top: -15px; */
+            position: absolute;
+            top: 105px;
+            left: 31px;
+            height: 0px;
+            width: 387px;
+        }
+        .bar11 {
+            display: inline-block;
+            border: 3px solid black;
+            /* margin-top: -15px; */
+            position: absolute;
+            top: 105px;
+            left: 31px;
+            height: 0px;
+            width: 183px;
+        }
+        .bar111 {
+            display: inline-block;
+            border: 3px solid black;
+            /* margin-top: -15px; */
+            position: absolute;
+            top: 105px;
+            left: 31px;
+            height: 0px;
+            width: 183px;
+        }
+        .bar2 {
+            display: inline-block;
+            border: 3px solid #e6eeef;
+            /* margin-top: -15px; */
+            position: absolute;
+            top: 105px;
+            left: 418px;
+            height: 0px;
+            width: 62px;
+        }
+        .bar22 {
+            display: inline-block;
+            border: 3px solid #e6eeef;
+            /* margin-top: -15px; */
+            position: absolute;
+            top: 105px;
+            left: 215px;
+            height: 0px;
+            width: 276px;
+        }
+        .bar222 {
+            display: inline-block;
+            border: 3px solid #e6eeef;
+            /* margin-top: -15px; */
+            position: absolute;
+            top: 105px;
+            left: 215px;
+            height: 0px;
+            width: 276px;
+        }
+
+        .progress {
+            position: absolute;
+            top: 118px;
+            left: 31px;
+        }
+        .progress2 {
+            position: absolute;
+            top: 118px;
+            left: 31px;
+        }
+        .progress3 {
+            position: absolute;
+            top: 118px;
+            left: 31px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont1">
+        <img id="image" src="/main.png" alt="HackerRank" width="150px">
+        <div class="cont2">
+            <ul>
+                <li id="a"><a href="">PREPARE</a></li>
+                <li id="b"><a href="https://www.hackerrank.com/skills-verification">CERTIFY</a></li>
+                <li id="c"><a href="https://www.hackerrank.com/contests">COMPETE</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="cont3">
+        <div class="subcont1">
+            <h4 id="h4f">Prepare</h4>
+        </div>
+        <div class="subcont2">
+            <a href="https://www.hackerrank.com/challenges/bookmarks">Bookmarked Challenges</a>
+        </div>
+        <h1>Prepare</h1>
+
+    </div>
+    <div class="cont4">
+        <div class="sub1">
+            <h3 id="h3f">Your Preparation</h3>
+        </div>
+        <!-- This is box no.1 -->
+        <div class="sub2">
+            <p class="grey">PREPARE BY TOPICS</p>
+            <img id="image2" src="/ProblemSolving.png" alt="HackerRank" width="150px">
+
+            <p class="content">Problem Solving</p>
+            <div class="bar">
+                <!-- <p>.</p> -->
+            </div>
+            <div class="bar2">
+                <!-- <p>.</p> -->
+            </div>
+
+            <p class="progress">84% <span style="color: #738f93;">(42.91 points to next star)</span></p>
+            <button class="btn" ><a href="https://www.hackerrank.com/domains/algorithms?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=problem-solving" style="text-decoration: none; color: white;">Continue Preperation</a></button>
+        </div>
+        
+        <!-- This is box no.2 -->
+        <div class="sub3">
+            <p class="grey2">PREPARE BY TOPICS</p>
+            <img id="image3" src="/C.png" alt="HackerRank" width="150px">
+
+            <p class="content2">C</p>
+            <div class="bar11">
+                <!-- <p>.</p> -->
+            </div>
+            <div class="bar22">
+                <!-- <p>.</p> -->
+            </div>
+            
+            <p class="progress2">38% <span style="color: #738f93;">(185 points to gold badge)</span></p>
+            <button class="btn2" ><a href="https://www.hackerrank.com/domains/c?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=c" style="text-decoration: none; color: #1ba94c;">Continue Preperation</a></button>
+            
+        </div>
+        
+        <!-- This is box no.3 -->
+        <div class="sub4">
+            <p class="grey3">PREPARE BY TOPICS</p>
+            <img id="image4" src="/Cpp.png" alt="HackerRank" width="150px">
+
+            <p class="content3">C++</p>
+            <div class="bar111">
+                <!-- <p>.</p> -->
+            </div>
+            <div class="bar222">
+                <!-- <p>.</p> -->
+            </div>
+            
+            <p class="progress3">43% <span style="color: #738f93;">(19/44 challenges solved)</span></p>
+            <button class="btn3" ><a href="https://www.hackerrank.com/domains/cpp?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=cpp" style="text-decoration: none; color: #1ba94c;">Continue Preperation</a></button>
+        </div>
+    </div>
+
+</body>
+
+</html>
